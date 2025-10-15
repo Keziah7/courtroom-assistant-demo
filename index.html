@@ -10,11 +10,10 @@
       padding: 40px;
       text-align: center;
     }
-    iframe {
-      border: none;
+    df-messenger {
       width: 100%;
       max-width: 400px;
-      height: 600px;
+      margin: 0 auto;
     }
   </style>
 </head>
@@ -22,6 +21,13 @@
   <h1>🧑‍⚖️ Courtroom Assistant</h1>
   <p>Ask me where a courtroom is — in English or Swahili!</p>
 
-  <!-- We'll embed your Dialogflow assistant here in the next step -->
+  <!-- Dialogflow Messenger Embed -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="LegalAssistantBot"
+    agent-id="01a58b26-18a8-4129-b5c7-840ef7699ff9"
+    language-code="en">
+  </df-messenger>
 </body>
 </html>
